@@ -1,0 +1,4 @@
+# Build artifacts
+source_code/object-*/
+source_code/bin/
+source_code/*.mod
