@@ -1,0 +1,48 @@
+ &INPUT
+    LABEL  = '2-channel system with Lennard-Jones 12-6 potentials: cold/ultracold scattering length',
+    URED   = 20.,
+    IPROPS =  7,      IPROPL =  9,          IPRINT = 6,
+    RMIN   =  0.8,    RMAX   = 10000.,      RMID   = 1.5,
+    DRS    =  0.001,  DRL    =  0.001,      IRMSET = 8,
+    JTOTL  =  0,      JTOTU  =  0,          IBFIX  = 2,
+    NNRG   =  1,      ENERGY =  1.0E-10,    EUNITS = 1,
+    ICHAN  =  1,
+    LASTIN =  0,
+ /
+ &BASIS
+    ITYPE  = 2,
+    NLEVEL = 2,        JLEVEL = 0, 1,   0, 2,
+                       ELEVEL = 0.D0,   100.D0,
+ /
+ &POTL
+    RM     =  1.0,            EPSIL  = 1.0,
+    MXLAM  =  3,
+    LAMBDA =  0, 1, 1,        0, 2, 2,        0, 1, 2,
+    NTERM  =  2,              2,              2,
+    NPOWER = -12, -6,        -12, -6,        -12, -6,
+    A      =  400., -400.,    400., -400.,    40., -40.,
+ /
+ &INPUT
+    LABEL  = '2-channel system with Lennard-Jones 12-6 potentials: cold/ultracold effective range',
+    URED   = 20.,
+    IPROPS =  7,      IPROPL =  9,          IPRINT = 6,
+    RMIN   =  0.8,    RMAX   = 10000.,      RMID   = 1.5,
+    DRS    =  0.001,  DRL    =  0.001,      IRMSET = 8,
+    JTOTL  =  0,      JTOTU  =  0,          IBFIX  = 2,
+    NNRG   =  2,      ENERGY =  1.0E-10, 2.0E-10,  EUNITS = 1,
+    ICHAN  =  1,
+    LASTIN =  1,
+ /
+ &BASIS
+    ITYPE  = 2,
+    NLEVEL = 2,        JLEVEL = 0, 1,   0, 2,
+                       ELEVEL = 0.D0,   100.D0,
+ /
+ &POTL
+    RM     =  1.0,            EPSIL  = 1.0,
+    MXLAM  =  3,
+    LAMBDA =  0, 1, 1,        0, 2, 2,        0, 1, 2,
+    NTERM  =  2,              2,              2,
+    NPOWER = -12, -6,        -12, -6,        -12, -6,
+    A      =  400., -400.,    400., -400.,    40., -40.,
+ /
